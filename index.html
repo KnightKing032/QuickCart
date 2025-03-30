@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickCart</title>
+    <title>E-Commerce Store</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,35 +44,35 @@
             width: 90%;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
             padding: 20px;
         }
         .product {
             background: white;
-            padding: 15px;
+            padding: 10px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         .product img {
             width: 100%;
-            max-height: 200px;
-            object-fit: cover;
+            height: 150px;
+            object-fit: contain;
             border-radius: 5px;
         }
         .product h2 {
-            font-size: 18px;
+            font-size: 16px;
             margin: 10px 0;
         }
         .product p {
-            font-size: 14px;
+            font-size: 12px;
             color: #555;
         }
         .product a {
             display: block;
             margin-top: 10px;
-            padding: 10px;
+            padding: 8px;
             background: #ff9900;
             color: white;
             text-decoration: none;
@@ -97,7 +97,7 @@
 </head>
 <body>
     <header>
-        QuickCart
+        My E-Commerce Store
         <div class="search-bar">
             <input type="text" id="search" onkeyup="searchProducts()" placeholder="Search products...">
         </div>
@@ -107,7 +107,7 @@
             <img src="product1.jpg" alt="Product 1">
             <h2>Product 1</h2>
             <p>Short description of Product 1.</p>
-            <a href="https://amzn.to/4j44Fgm">View Product</a>
+            <a href="https://example.com/product1" target="_blank">View Product</a>
         </div>
         
         <div class="product">
@@ -115,6 +115,20 @@
             <h2>Product 2</h2>
             <p>Short description of Product 2.</p>
             <a href="https://example.com/product2" target="_blank">View Product</a>
+        </div>
+        
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h2>Product 3</h2>
+            <p>Short description of Product 3.</p>
+            <a href="https://example.com/product3" target="_blank">View Product</a>
+        </div>
+        
+        <div class="product">
+            <img src="product4.jpg" alt="Product 4">
+            <h2>Product 4</h2>
+            <p>Short description of Product 4.</p>
+            <a href="https://example.com/product4" target="_blank">View Product</a>
         </div>
     </div>
     <footer>
